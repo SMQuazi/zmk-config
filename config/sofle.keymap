@@ -13,7 +13,7 @@
 };
 
 &left_encoder {
-    resolution = <1>;
+    resolution = <2>;
 };
 
 / {
