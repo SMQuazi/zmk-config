@@ -39,7 +39,7 @@
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp K_MUTE2    &none    &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE      &kp RET  &mo 2   &kp RCTRL  &kp RALT   &kp RGUI
             >;
-            sensor-bindings = <&rot_kp C_VOL_DN C_VOLUME_UP &rgb_encoder>;
+            sensor-bindings = <&rgb_encoder &rot_kp C_VOL_DN C_VOLUME_UP>;
         };
 
         lower_layer {
