@@ -40,7 +40,7 @@
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE     &kp RET          &mo 2   &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&rgb_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&rgb_encoder>;
         };
 
         lower_layer {
