@@ -13,8 +13,6 @@
 
 &led_strip { chain-length = <35>; };
 
-&left_encoder { resolution = <2>; };
-
 &nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
 
 / {
