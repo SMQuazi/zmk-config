@@ -39,7 +39,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp K_REDO K_UNDO>;
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         lower_layer {
@@ -71,11 +71,11 @@
             //               |      |       |       |layer3|      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp HOME  &trans    &kp UP_ARROW  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp END   &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans        &trans     &trans  &trans
-                &trans  &trans  &trans  &mo 3   &trans    &trans  &trans    &trans    &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans         &trans              &trans        &trans         &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp PG_UP      &kp LC(LEFT_ARROW)  &kp UP_ARROW  &kp LC(RIGHT)  &kp LC(BACKSPACE)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp PAGE_DOWN  &kp LEFT            &kp DOWN      &kp RIGHT      &kp DEL            &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &kp HOME            &trans        &kp END        &trans             &trans
+                &trans  &trans  &trans  &mo 3   &trans    &trans  &trans         &trans              &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
