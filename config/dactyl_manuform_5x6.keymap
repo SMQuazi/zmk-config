@@ -51,14 +51,14 @@
 
         adjust_layer {
             bindings = <
-&trans  &trans   &trans           &trans  &trans  &trans                    &trans         &trans              &trans        &trans         &trans             &trans
-&trans  &kp INS  &kp PRINTSCREEN  &trans  &trans  &trans                    &kp PG_UP      &kp LC(LEFT_ARROW)  &kp UP_ARROW  &kp LC(RIGHT)  &kp LC(BACKSPACE)  &trans
-&trans  &trans   &trans           &trans  &trans  &kp CAPS                  &kp PAGE_DOWN  &kp LEFT            &kp DOWN      &kp RIGHT      &kp DEL            &kp BACKSPACE
-&trans  &trans   &trans           &trans  &trans  &trans                    &trans         &kp HOME            &trans        &kp END        &trans             &bootloader
-                 &none            &none                                                                        &none         &none
-                                          &trans  &trans                    &trans         &trans
-                                                  &trans    &trans  &trans  &trans
-                                                  &trans    &trans  &trans  &trans
+&trans       &trans   &trans           &trans  &trans  &trans                    &trans         &trans              &trans        &trans         &trans             &trans
+&trans       &kp INS  &kp PRINTSCREEN  &trans  &trans  &trans                    &kp PG_UP      &kp LC(LEFT_ARROW)  &kp UP_ARROW  &kp LC(RIGHT)  &kp LC(BACKSPACE)  &trans
+&trans       &trans   &trans           &trans  &trans  &kp CAPS                  &kp PAGE_DOWN  &kp LEFT            &kp DOWN      &kp RIGHT      &kp DEL            &kp BACKSPACE
+&bootloader  &trans   &trans           &trans  &trans  &trans                    &trans         &kp HOME            &trans        &kp END        &trans             &bootloader
+                      &none            &none                                                                        &none         &none
+                                               &trans  &trans                    &trans         &trans
+                                                       &trans    &trans  &trans  &trans
+                                                       &trans    &trans  &trans  &trans
             >;
         };
     };
