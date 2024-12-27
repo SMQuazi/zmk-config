@@ -1,16 +1,16 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/petejohanson
     - name: bullwinkle3000
       url-base: https://github.com/bullwinkle3000
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-pmw3360-driver
       remote: bullwinkle3000
-      revision: pmw3360
+      revision: main
   self:
     path: config
