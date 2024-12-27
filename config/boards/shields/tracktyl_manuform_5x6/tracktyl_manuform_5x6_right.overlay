@@ -44,7 +44,7 @@
 
     trackball: trackball@0 {
         status = "okay";
-        compatible = "src,pmw3360";
+        compatible = "pixart,pmw3360";
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
@@ -54,4 +54,8 @@
         scroll-layers = <2 3>;
         automouse-layer = <4>;
     };
+};
+
+zephyr_udc0: &usbd {
+    status = "okay";
 };
