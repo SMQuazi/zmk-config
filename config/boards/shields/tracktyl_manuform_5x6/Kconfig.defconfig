@@ -13,13 +13,6 @@ if SHIELD_TRACKTYL_MANUFORM_5x6_RIGHT
     config ZMK_KEYBOARD_NAME
         default "TM-5x6(Right)"
 
-    config ZMK_POINTING
-        default y
-
-    # Assuming pointing device uses SPI
-    config SPI
-        default y
-
 endif
 
 if SHIELD_TRACKTYL_MANUFORM_5x6_LEFT || SHIELD_TRACKTYL_MANUFORM_5x6_RIGHT
