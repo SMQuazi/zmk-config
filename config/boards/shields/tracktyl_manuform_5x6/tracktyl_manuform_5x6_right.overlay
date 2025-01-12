@@ -55,11 +55,11 @@
     };
 };
 
-// SDIO > MISO/MOSI > P0.17
-// SLCK > SCK > P0.08
-// NCS > cs-gpios > P0.20
-// NRESET > N/A
-// MOT > irq-gpios > P0.06
+// SDIO   > MISO/MOSI > P0.17
+// SLCK   > SCK       > P0.08
+// NCS    > cs-gpios  > P0.20
+// NRESET             > N/A
+// MOT    > irq-gpios > P0.06
 
 / {
   trackball_listener {
