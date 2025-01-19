@@ -1,29 +1,29 @@
 if SHIELD_TRACKTYL_MANUFORM_5x6_LEFT
 
     config ZMK_KEYBOARD_NAME
-        default "TM-5x6(Left)"
+        default "tracktyl56_left"
 
-    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    config ZMK_SPLIT_ROLE_CENTRAL
         default y
+
+    config ZMK_POINTING
+    default y
+
+    config SPI
+    default y
 
 endif
 
 if SHIELD_TRACKTYL_MANUFORM_5x6_RIGHT
 
     config ZMK_KEYBOARD_NAME
-        default "TM-5x6(Right)"
-
-    config SPI
-        default y
+        default "tracktyl56_right"
 
 endif
 
 if SHIELD_TRACKTYL_MANUFORM_5x6_LEFT || SHIELD_TRACKTYL_MANUFORM_5x6_RIGHT
 
     config ZMK_SPLIT
-        default y
-    
-    config ZMK_POINTING
         default y
 
 endif

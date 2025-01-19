@@ -1,5 +1,5 @@
 config SHIELD_TRACKTYL_MANUFORM_5x6_LEFT
-    def_bool $(shields_list_contains,tracktyl_manuform_5x6_left)
+    def_bool $(shields_list_contains,tracktyl56_left)
 
 config SHIELD_TRACKTYL_MANUFORM_5x6_RIGHT
-    def_bool $(shields_list_contains,tracktyl_manuform_5x6_right)
+    def_bool $(shields_list_contains,tracktyl56_right)

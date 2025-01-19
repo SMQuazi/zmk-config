@@ -1,19 +1,15 @@
-#include "tracktyl_manuform_5x6.dtsi"
+#define INPUT_EV_KEY 0x01               /**< Key event */
+#define INPUT_EV_REL 0x02               /**< Relative coordinate event */
+#define INPUT_EV_ABS 0x03               /**< Absolute coordinate event */
+#define INPUT_EV_MSC 0x04               /**< Miscellaneous event */
+#define INPUT_EV_VENDOR_START 0xf0      /**< Vendor specific event start */
+#define INPUT_EV_VENDOR_STOP 0xff       /**< Vendor specific event stop */
 
-&default_transform { // The matrix transform for this board is 6 columns over because the left half is 6 columns wide according to the matrix.
-    col-offset = <6>;
-};
-
-&kscan0 {
-    col-gpios
-        = <&pro_micro 9 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 8 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 7 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 6 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 5 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 4 GPIO_ACTIVE_HIGH>
-        ;
-};
+#define INPUT_REL_X 0x00                /**< Relative X coordinate */
+#define INPUT_REL_Y 0x01                /**< Relative Y coordinate */
+#define INPUT_REL_WHEEL 0x08            /**< Relative wheel coordinate */
+#define INPUT_REL_HWHEEL 0x06           /**< Relative horizontal wheel coordinate */
+#define INPUT_REL_MISC 0x09             /**< Relative misc coordinate */
 
 &pinctrl {
     spi0_default: spi0_default {
@@ -35,7 +31,7 @@
 };
 
 &spi0 {
-    status = "okay";
+    status = "disabled";
     compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
@@ -53,12 +49,4 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
     };
-};
-
-// Overrides for the input-split child node
-&trackball_split {
-    device = <&trackball>;
-
-    // Optional
-    // input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 };
