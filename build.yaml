@@ -30,4 +30,3 @@ include:
     snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: tracktyl56_right
-    snippet: zmk-usb-logging
