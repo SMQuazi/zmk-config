@@ -55,15 +55,10 @@
     };
 };
 
-// SDIO   > MISO/MOSI > P0.17
-// SLCK   > SCK       > P0.08
-// NCS    > cs-gpios  > P0.20
-// NRESET             > N/A
-// MOT    > irq-gpios > P0.06
-
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
+// Overrides for the input-split child node
+&trackball_split {
     device = <&trackball>;
-  };
+
+    // Optional
+    // input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 };

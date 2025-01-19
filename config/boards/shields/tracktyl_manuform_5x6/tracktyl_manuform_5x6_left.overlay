@@ -1,4 +1,4 @@
-#include "tracktyl_manuform_5x6.dtsi" // Notice that the main dtsi files are included in the overlay.
+#include "tracktyl_manuform_5x6.dtsi" 
 
 &kscan0 {
     col-gpios
@@ -9,4 +9,8 @@
         , <&pro_micro 8 GPIO_ACTIVE_HIGH>
         , <&pro_micro 9 GPIO_ACTIVE_HIGH>
         ;
+};
+
+&trackball_listener {
+    status = "okay";
 };
