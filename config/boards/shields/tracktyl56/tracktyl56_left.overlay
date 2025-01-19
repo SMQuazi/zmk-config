@@ -1,4 +1,4 @@
-#include "tracktyl_manuform_5x6.dtsi"
+#include "tracktyl56.dtsi"
 #include "pmw3610.dtsi"
 
 &kscan0 {
