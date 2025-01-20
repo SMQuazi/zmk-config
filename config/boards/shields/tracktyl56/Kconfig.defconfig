@@ -3,14 +3,14 @@ if SHIELD_TRACKTYL_MANUFORM_5x6_LEFT
     config ZMK_KEYBOARD_NAME
         default "tracktyl56_left"
 
-    config ZMK_SPLIT_ROLE_CENTRAL
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
         default y
 
     config ZMK_POINTING
-    default y
+        default y
 
     config SPI
-    default y
+        default y
 
 endif
 
