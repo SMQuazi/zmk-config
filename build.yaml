@@ -27,9 +27,9 @@ include:
 #    shield: corne_right nice_view_adapter nice_view
   - board: nice_nano
     shield: dactyl_manuform_5x6_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-#  - board: nice_nano
-#    shield: dactyl_manuform_5x6_right
+#    snippet: studio-rpc-usb-uart
+#    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano
+    shield: dactyl_manuform_5x6_right
 #  - board: nice_nano
 #    shield: settings_reset
