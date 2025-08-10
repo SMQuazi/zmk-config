@@ -21,7 +21,7 @@
                         &kp LEFT_BRACE  &kp RIGHT_BRACE                                                                                          &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                                          &kp LEFT_GUI  &mo 1                                   &mo 2              &kp RIGHT_GUI
                                                                        &kp LEFT_CONTROL  &kp SPACE  &kp ENTER  &kp RIGHT_CONTROL
-                                                                       &kp LEFT_ALT      &trans     &trans     &kp RIGHT_ALT
+                                                                       &kp LEFT_ALT      &kp LALT   &kp RALT   &kp RIGHT_ALT
             >;
         };
 
